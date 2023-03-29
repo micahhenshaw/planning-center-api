@@ -378,6 +378,7 @@ class PlanningCenterAPI
 
         $results['data'] = [];
         $results['included'] = [];
+        $results['meta'] = [];
         $numRows = 0;
 
         do {
@@ -396,6 +397,7 @@ class PlanningCenterAPI
             // Append the result set to the previous results
             $results['data'] = array_merge($results['data'], $r['data']);
             $results['included'] = array_merge($results['included'], $r['included']);
+            $results['meta'] = array_merge($results['meta'], $r['meta']);
 
             // Set offset and per_page for next iteration, if any
             $this->setRequestWindow($numRows);
