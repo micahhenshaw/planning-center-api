@@ -1,5 +1,5 @@
 {
-    "name": "smadeira/planning-center-api",
+    "name": "micahhenshaw/planning-center-api",
     "description": "PHP API wrapper for the Planning Center JSON API",
     "type": "library",
     "license": "MIT",
