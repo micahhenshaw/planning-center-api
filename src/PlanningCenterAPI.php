@@ -658,6 +658,8 @@ class PlanningCenterAPI
     private function execute($endpoint, $client)
     {
 
+        usleep(10000);
+
         $this->headers = ['Accept: application/json',
             'Content-type: application/json',
             $this->authorization
